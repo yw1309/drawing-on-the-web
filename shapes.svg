@@ -2,7 +2,23 @@
 
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 550 300" style="enable-background:new 0 0 550 300;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
+	<!-- <style type="text/css">
+		#circles:hover {
+		transform: rotate(-10deg);
+		-webkit-transform: rotate(-10deg);
+		}
+		#circles2:hover {
+		fill:url(#gradient5);
+		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		}
+		#tri:hover {
+		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		}
+	</style> -->
+
 	<defs>
 		<filter id="my-filter" x="0" y="0">
 			<feGaussianBlur in="SourceGraphic" stdDeviation="15" />
@@ -32,16 +48,175 @@
 			<stop offset="100%" stop-color="magenta" stop-opacity="0.8" />
 		</linearGradient>
 	</defs>
+	<defs>
+		<linearGradient id="gradient4" x1="100%" y1="00%" x2="00%" y2="100%">
+			<stop offset="0%" stop-color="magenta" stop-opacity="0.8" />
+			<stop offset="100%" stop-color="yellow" stop-opacity="0.8" />
+		</linearGradient>
+		<linearGradient id="gradient5" x1="100%" y1="100%" x2="0%" y2="00%">
+			<stop offset="0%" stop-color="magenta" stop-opacity="0.8" />
+			<stop offset="100%" stop-color="yellow" stop-opacity="0.8" />
+		</linearGradient>
+	</defs>
 
-	<!-- Square -->
-	<rect x="30" y="30" width="240" height="240" fill="url(#gradient3)" />
+	<circle id="circle2" cx="285" cy="251" r="176" fill="url(#gradient4)">
+		<animateTransform
+			attributeName="transform"
+			begin="0s"
+			dur="3s"
+			type="rotate"
+			from="0 285 251"
+			to="360 285 251"
+			repeatCount="indefinite" />
+		</circle>
 
-	<!-- Circle -->
-	<circle cx="270" cy="150" r="120" fill="url(#gradient1)" />
 
-	<!-- Triangle -->
-	<polygon points="400,30 270,270 520,270" fill="url(#gradient2)" />
+		<g>
+			<rect x="0" y="0" width="600" height="600" fill="url(#gradient3)" />
+			<animateTransform
+				attributeName="transform"
+				begin="0s"
+				dur="3s"
+				type="rotate"
+				from="100 400 0"
+				to="100 100 1600"
+				repeatCount="indefinite" />
 
-	<!-- Line -->
-	<!-- <line x1="0" y1="150" x2="550" y2="150" stroke="black" stroke-width="1" />  -->
-</svg>
+			</g>
+
+			<g>
+				<rect x="0" y="0" width="600" height="600" fill="url(#gradient2)" />
+				<animateTransform
+					attributeName="transform"
+					begin="0s"
+					dur="3s"
+					type="rotate"
+					from="700 200 500"
+					to="600 100 1600"
+					repeatCount="indefinite" />
+					<circle cx="100" cy="100" r="30" fill="url(#gradient4)" />
+					<circle cx="100" cy="200" r="30" fill="url(#gradient4)" />
+					<circle cx="100" cy="300" r="30" fill="url(#gradient4)" />
+					<circle cx="100" cy="400" r="30" fill="url(#gradient4)" />
+					<circle cx="100" cy="500" r="30" fill="url(#gradient4)" />
+
+					<circle cx="200" cy="100" r="30" fill="url(#gradient4)" />
+					<circle cx="200" cy="200" r="30" fill="url(#gradient4)" />
+					<circle cx="200" cy="300" r="30" fill="url(#gradient4)" />
+					<circle cx="200" cy="400" r="30" fill="url(#gradient4)" />
+					<circle cx="200" cy="500" r="30" fill="url(#gradient4)" />
+
+					<circle cx="300" cy="100" r="30" fill="url(#gradient4)" />
+					<circle cx="300" cy="200" r="30" fill="url(#gradient4)" />
+					<circle cx="300" cy="300" r="30" fill="url(#gradient4)" />
+					<circle cx="300" cy="400" r="30" fill="url(#gradient4)" />
+					<circle cx="300" cy="500" r="30" fill="url(#gradient4)" />
+
+					<circle cx="400" cy="100" r="30" fill="url(#gradient4)" />
+					<circle cx="400" cy="200" r="30" fill="url(#gradient4)" />
+					<circle cx="400" cy="300" r="30" fill="url(#gradient4)" />
+					<circle cx="400" cy="400" r="30" fill="url(#gradient4)" />
+					<circle cx="400" cy="500" r="30" fill="url(#gradient4)" />
+
+					<circle cx="500" cy="100" r="30" fill="url(#gradient4)" />
+					<circle cx="500" cy="200" r="30" fill="url(#gradient4)" />
+					<circle cx="500" cy="300" r="30" fill="url(#gradient4)" />
+					<circle cx="500" cy="400" r="30" fill="url(#gradient4)" />
+					<circle cx="500" cy="500" r="30" fill="url(#gradient4)" />
+				</g>
+
+				<g>
+					<rect x="0" y="0" width="600" height="600" fill="url(#gradient1)" />
+					<animateTransform
+						attributeName="transform"
+						begin="0s"
+						dur="2s"
+						type="rotate"
+						from="00 00 0"
+						to="600 500 1600"
+						repeatCount="indefinite" />
+						<circle cx="100" cy="100" r="30" fill="url(#gradient2)" />
+						<circle cx="100" cy="200" r="30" fill="url(#gradient2)" />
+						<circle cx="100" cy="300" r="30" fill="url(#gradient2)" />
+						<circle cx="100" cy="400" r="30" fill="url(#gradient2)" />
+						<circle cx="100" cy="500" r="30" fill="url(#gradient2)" />
+
+						<circle cx="300" cy="100" r="30" fill="url(#gradient2)" />
+						<circle cx="300" cy="200" r="30" fill="url(#gradient2)" />
+						<circle cx="300" cy="300" r="30" fill="url(#gradient2)" />
+						<circle cx="300" cy="400" r="30" fill="url(#gradient2)" />
+						<circle cx="300" cy="500" r="30" fill="url(#gradient2)" />
+
+						<circle cx="500" cy="100" r="30" fill="url(#gradient2)" />
+						<circle cx="500" cy="200" r="30" fill="url(#gradient2)" />
+						<circle cx="500" cy="300" r="30" fill="url(#gradient2)" />
+						<circle cx="500" cy="400" r="30" fill="url(#gradient2)" />
+						<circle cx="500" cy="500" r="30" fill="url(#gradient2)" />
+					</g>
+
+					<g>
+						<rect x="0" y="0" width="600" height="600" fill="url(#gradient5)" />
+						<animateTransform
+							attributeName="transform"
+							begin="0s"
+							dur="3s"
+							type="rotate"
+							from="900 900 900"
+							to="-220 -220 -200"
+							repeatCount="indefinite" />
+
+							<rect x="125" y="125" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="250" y="125" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="375" y="125" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="500" y="125" width="50" height="50" fill="url(#gradient1)" />
+
+							<rect x="125" y="250" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="250" y="250" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="375" y="250" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="500" y="250" width="50" height="50" fill="url(#gradient1)" />
+
+							<rect x="125" y="375" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="250" y="375" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="375" y="375" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="500" y="375" width="50" height="50" fill="url(#gradient1)" />
+
+							<rect x="125" y="500" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="250" y="500" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="375" y="500" width="50" height="50" fill="url(#gradient1)" />
+							<rect x="500" y="500" width="50" height="50" fill="url(#gradient1)" />
+
+						</g>
+
+						<g>
+							<rect x="0" y="0" width="600" height="600" fill="url(#gradient5)" />
+							<animateTransform
+								attributeName="transform"
+								begin="0s"
+								dur="3s"
+								type="rotate"
+								from="500 400 300"
+								to="400 1300 600"
+								repeatCount="indefinite" />
+
+							</g>
+
+							<g>
+
+								<rect x="0" y="0" width="600" height="600" fill="url(#gradient1)" />
+								<animateTransform
+									attributeName="transform"
+									begin="0s"
+									dur="3s"
+									type="rotate"
+									from="200 0 -200"
+									to="800 100 800"
+									repeatCount="indefinite" />
+
+								</g>
+								<g id="tri">
+									<polygon points="300,200 250,290 350,290" fill="url(#gradient2)" />
+									<polygon points="300,100 250,190 350,190" fill="url(#gradient2)" />
+									<polygon points="300,300 250,390 350,390" fill="url(#gradient2)" />
+
+								</g>
+							</svg>
